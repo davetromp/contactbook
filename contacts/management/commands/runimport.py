@@ -35,7 +35,7 @@ class Command(BaseCommand):
             except:
                 pass
 
-        CON = create_engine('sqlite:///'.format(os.path.join(settings.BASE_DIR, 'db.sqlite3')), encoding='utf-8')
+        CON = create_engine('sqlite:///{}'.format(os.path.join(settings.BASE_DIR, 'db.sqlite3')), encoding='utf-8')
 
         df.to_sql(con=CON, name="contacts_contact",
                   if_exists='replace', index='id')
