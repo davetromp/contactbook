@@ -20,9 +20,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'm-9e+9g&u5%((_p-ykz-_olcu^4ve!#m_0a86b+r@rj95!zjs-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'contactbook.davetromp.nl']
 
 
 # Application definition
