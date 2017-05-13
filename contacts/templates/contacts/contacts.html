@@ -1,0 +1,26 @@
+{% extends "contacts/index.html" %} {% block content %}
+<h1>Contacts</h1>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <td></td>
+    <td>First name</td>
+    <td>Last name</td>
+    <td>Street</td>
+    <td>Zip</td>
+    <td>City</td>
+    {% for contact in contacts %}
+    <tr>
+      <td>
+        {% if contact.thumbnail != None %}
+        <img src="data:image/png;base64,{{contact.thumbnail}}"> {% endif %}
+      </td>
+      <td>{{contact.firstname}}</td>
+      <td>{{contact.lastname}}</td>
+      <td>{{contact.street}}</td>
+      <td>{{contact.zipcode}}</td>
+      <td>{{contact.city}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

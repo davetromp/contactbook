@@ -1,0 +1,31 @@
+{% extends "contacts/index.html" %}
+{% block content %}
+<h1>Readme</h1>
+This is a proto type web application that displays a contact list.<br>
+<br>
+The data consists of:<br>
+<ul>
+<li>Firstname</li>
+<li>Lastname</li>
+<li>Street</li>
+<li>Zip</li>
+<li>City</li>
+<li>Image</li>
+</ul>
+<br>
+The data set is hosted in Google Docs as a spreadsheet: https://docs.google.com/spreadsheets/d/1HclH8WugumpyWvNHfE1zopZGeA38DdCdM3458VjBeNg/edit?usp=sharing<br>
+<br>
+<p>
+The spreadsheet can be edited in the spreadsheet and then it can be imported in the application by clicking the Import link in the menu bar. The contacts can be accessed via an API. You can inspect the API by clicking the Api link in the menu bar. Any links to images that are valid imagelinks are transformed into thumbnails in the form of base64 data strings and are made available as such via the Api.<br>
+New contacts can be posted via the Api once logged in.<br>
+The log in credentials are:<br>
+user: demo<br>
+pw: contactbook<br>
+<br>
+url: <a href="/api/contacts/" target="_blank">/api/contacts/</a><br>
+<br>
+The contacts information is searchable via the Api like so:<br>
+<a href="/api/search/?q=Dave" target="_blank">/api/search/?q=Dave</a><br>
+</p>
+
+{% endblock %}
