@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="{% static "css/style.css"%}" rel="stylesheet">
 
   </head>
 
@@ -44,6 +45,7 @@
           $(document).ready(function(){
             $(".import").click(function(){
               $.get("/import", function(data, status){
+                  window.location.href = "/";
                   alert("Status: " + status);
               });
             });
