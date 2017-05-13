@@ -11,3 +11,5 @@ pip install -r requirements
 python manage.py runserver
 
 Open http://127.0.0.1:8000/ in your browser.
+
+You can also checkout a running version at http://contactbook.davetromp.nl
