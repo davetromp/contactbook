@@ -43,7 +43,7 @@ def search(request):
 
 
 def index(request):
-    contacts = Contact.objects.all()
+    contacts = Contact.objects.all()[:20]
     return render(request, 'contacts/contacts.html', {'contacts': contacts})
 
 
