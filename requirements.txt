@@ -1,7 +1,7 @@
 appdirs==1.4.3
 Django==1.11
 django-filter==1.0.2
-djangorestframework==3.6.2
+djangorestframework==3.11.2
 Markdown==2.6.8
 numpy==1.12.1
 olefile==0.44
